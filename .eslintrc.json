@@ -1,0 +1,41 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": ["eslint:recommended", "react-app"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "linebreak-style": ["error", "linux"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "no-console": "warn",
+        "no-empty" : "error",
+        "no-whitespace-before-property": "error",
+        "no-empty-function": "error",
+        "no-mixed-spaces-and-tabs": "error",
+        "block-spacing": "warn",
+        "camelcase": "warn",
+        "sort-vars": "warn",
+        "no-multiple-empty-lines": [ "warn", {"max": 1} ],
+        "indent": ["error", 4],
+        "eol-last": ["error", "always"],
+        "react/jsx-closing-bracket-location": "always",
+        "react/jsx-closing-tag-location": "always",
+        "react/jsx-curly-spacing": ["always", {"children": true}],
+        "react/sort-prop-types": "always"
+    }
+}
